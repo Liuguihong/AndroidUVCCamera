@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="40pt"
+    android:layout_marginRight="40pt">
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="640pt"
+        android:layout_height="480pt"
+        android:layout_centerInParent="true" />
+
+    <!--<SurfaceView-->
+    <!--android:id="@+id/surfaceView"-->
+    <!--android:layout_width="640pt"-->
+    <!--android:layout_height="480pt"-->
+    <!--android:layout_centerInParent="true" />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分辨率："
+            android:textSize="24pt" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="220pt"
+            android:layout_height="100pt"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/take_picture"
+        style="@style/btn_style"
+        android:layout_width="120pt"
+        android:layout_height="120pt"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50pt"
+        android:src="@mipmap/ic_take_picture"
+        android:text="拍照" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/btn_style"
+            android:text="开始预览" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/btn_style"
+            android:text="停止预览" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/btn_style"
+            android:text="删除缓存" />
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/btn_style"
+            android:text="旋转180度" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imag1"
+        style="@style/img_style"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>
