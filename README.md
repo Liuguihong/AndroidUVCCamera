@@ -1,7 +1,4 @@
 # AndroidUVCCamera
-Android外接UVC相机库，致力于使用最简单的API、最清晰的代码逻辑实现预览和拍照功能。
-[文档：最好用的Android UVC Camera库](https://blog.csdn.net/u011630465/article/details/86511258)
-
 最近在做一个外接USB相机的项目，github上搜了下，有很多开源的库，这些库底层基本用的都是同一套东西，但上层业务比较繁琐，使用起来很不方便，并且也不太符合项目的业务需求，所以重新封装了一下，本库只需几个简单的API即可完成预览、拍照功能，无需关注复杂的USB插拔处理逻辑。
 #### 1.添加依赖
 Step 1. Add the JitPack repository to your build file.Add it in your root build.gradle at the end of repositories:
